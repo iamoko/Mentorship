@@ -1,7 +1,7 @@
 @media (max-width: 1020px) {
   .home-container > div:last-child {
-    /* display: none; */
-    width: 100%;
+    display: none;
+    /* width: 40%; */
   }
 
   .home-container > div:nth-child(2) {
@@ -25,6 +25,11 @@
 }
 
 @media (max-width: 640px) {
+  .home-container > div:last-child {
+    display: block;
+    width: 100%;
+  }
+
   .home-container > div > div {
     width: 100%;
     border-radius: 0px;
