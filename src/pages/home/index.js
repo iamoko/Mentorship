@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import Dummy from "../dummy";
+import Footer from "../../layouts/footer/footer";
 
 function index() {
   return (
@@ -20,13 +21,11 @@ function index() {
         ))}
       </div>
       <div className="w-80">
-        <div className="p-4 mb-4 bg-blue-600 rounded-lg">
+        <div className="p-4 mb-4 bg-white border rounded-lg">
           <Dummy />
         </div>
 
-        <div className="sticky p-4 mt-3 mb-4 bg-green-600 rounded-lg top-16">
-          <Dummy />
-        </div>
+        <Footer />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import _ from "lodash";
-import Dummy from "../dummy";
 import NotificationItem from "../../components/notifications/notification";
+import Footer from "../../layouts/footer/footer";
 
 function index() {
   return (
@@ -17,9 +17,7 @@ function index() {
         ))}
       </div>
       <div className="w-80">
-        <div className="sticky p-4 mb-4 bg-white border rounded-lg top-16">
-          <Dummy />
-        </div>
+        <Footer />
       </div>
     </div>
   );
