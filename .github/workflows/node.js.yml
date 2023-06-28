@@ -26,9 +26,9 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
 
-
-    - run: git config user.name "Amoko Ivan"
-    - run: git config user.email "amokoivan@gmail.com"
+    run: |-
+        git config user.name "Amoko Ivan"
+        git config user.email "amokoivan@gmail.com"
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
