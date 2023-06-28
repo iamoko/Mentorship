@@ -9,7 +9,6 @@ function index() {
       <div className="flex w-full h-full bg-white border-t border-gray-300 rounded-t-xl border-s border-e">
         <div className="w-2/5 border-e">
           <p className="h-12 px-4 py-3 font-bold border-b text-md">Messaging</p>
-
           <Chats />
         </div>
 
