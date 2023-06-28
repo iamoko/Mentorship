@@ -25,8 +25,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - run: git config user.name "Automated"
-    - run: git config user.email "actions@users.noreply.github.com"
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
