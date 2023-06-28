@@ -1,0 +1,21 @@
+@media (max-width: 1025px) {
+  .messaging-container > div:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .messaging-container > div:nth-child(1) {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+  .messaging-container > div:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+  }
+  .messaging-container > div:nth-child(1) > div:nth-child(2) {
+    display: none;
+  }
+}
