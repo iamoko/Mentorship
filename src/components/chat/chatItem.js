@@ -1,9 +1,22 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+import { chats, addChat } from "../../services/reducers";
 
 function ChatItem(props) {
   const chat = props.chat;
+
+  /** React redux initialization */
+  const dispatch = useDispatch();
+
   return (
-    <div className="flex px-4 pt-4">
+    <div
+      className="flex px-4 pt-4 hover:cursor-pointer"
+      onClick={() => {
+        dispatch(addChat.chatKey(chat.id));
+        dispatch(addChat.title(chat.title));
+      }}
+    >
       <img
         src={props.chat.picture}
         alt="profile"
