@@ -6,17 +6,18 @@ function Chats() {
   const chats = [
     {
       id: "1",
-      picture: "https://avatars.githubusercontent.com/u/40918307?v=4",
-      title: "Nakawungu Zaharah",
+      picture:
+        "https://www.monitor.co.ug/resource/blob/4203390/433067ad42f2b136223cac3504e3a2c5/latest08pix-data.jpg",
+      title: "agnes nandutu",
       message:
-        "Cybersecurity professional in training | Software engineer |Digital communication manager|project management|SEO ",
-      date: "May 17",
+        "We are in danger of destroying ourselves by our greed and stupidity. We cannot remain looking inwards at ourselves on a small and increasingly polluted and overcrowded planet.",
+      date: "May 30",
     },
     {
       id: "2",
       picture:
         "https://media.cnn.com/api/v1/images/stellar/prod/230619184105-trump-nc-0610.jpg?c=16x9&q=h_720,w_1280,c_fill",
-      title: "Trump",
+      title: "Donald Trump",
       message: "Come on, just drink some Disinfectants",
       date: "May 17",
     },
@@ -63,9 +64,36 @@ function Chats() {
         "Before you criticize someone, walk a mile in their shoes. That way, you'll be a mile from them, and you'll have their shoes.",
       date: "Jan 20",
     },
+    {
+      id: "8",
+      picture:
+        "https://pbs.twimg.com/profile_images/956102235930456064/_NhZTJyw_400x400.jpg",
+      title: "joão Lourenço",
+      message:
+        "When you see a couple walking down the street holding hands and laughing, you look over to your side and the only thing you’re holding is a half-eaten sandwich.",
+      date: "Jan 20",
+    },
+    {
+      id: "9",
+      picture:
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Philemon_Yang%2C_Prime_Minister_of_Cameroon_in_London%2C_21_June_2010._%284720521915%29_cropped.jpg",
+      title: "Philémon Yunji Yang",
+      message:
+        "After twelve years of therapy my psychiatrist said something that brought tears to my eyes. He said, ‘No hablo ingles.",
+      date: "Jan 20",
+    },
+    {
+      id: "10",
+      picture:
+        "https://upload.wikimedia.org/wikipedia/commons/7/7c/Paul_Biya_2014.png",
+      title: "Paul Biya",
+      message:
+        "If I have brought any message today, it is this: Have the courage to have your wisdom regarded as stupidity. Be fools for Christ. And have the courage to suffer the contempt of the sophisticated world.",
+      date: "Feb 2",
+    },
   ];
   return (
-    <div className="h-[calc(100vh_-_110px)] overflow-x-hidden overscroll-y-auto">
+    <div className="h-[calc(100vh_-_120px)] overflow-x-hidden overscroll-y-auto">
       {_.map(chats, (chat, i) => (
         <ChatItem key={i} chat={chat} />
       ))}
