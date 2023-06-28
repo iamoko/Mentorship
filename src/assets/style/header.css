@@ -1,0 +1,27 @@
+@media (max-width: 850px) {
+  .header-link p,
+  .header-profile p {
+    display: none;
+  }
+
+  .header-link {
+    padding: 16px 25px;
+    border: none;
+  }
+
+  .header-profile {
+    padding-top: 2px;
+  }
+
+  .header-profile img {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-link {
+    padding: 16px 18qpx;
+    border: none;
+  }
+}

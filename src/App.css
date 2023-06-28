@@ -1,0 +1,5 @@
+@import "./assets//style/header.css";
+@import "./assets//style/home.css";
+body {
+  background-color: #f3f2f0;
+}
