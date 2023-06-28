@@ -1,5 +1,6 @@
 import React from "react";
 import Chats from "./chats";
+import Messages from "./messages";
 
 function index() {
   document.title = "Messaging";
@@ -13,9 +14,7 @@ function index() {
         </div>
 
         <div className="w-3/5">
-          <p className="px-4 py-3 text-sm font-semibold border-b">
-            Messages section
-          </p>
+          <Messages />
         </div>
       </div>
       <div>
