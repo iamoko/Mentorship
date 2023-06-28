@@ -72,7 +72,7 @@ function Chats() {
       id: "7",
       picture:
         "https://images.csmonitor.com/csm/2019/09/1007%20BOBI%20WINE%20LEDE.jpg?alias=standard_380x253",
-      name: "Kyagulanyi",
+      name: "Robert Kyagulanyi",
       title:
         "Opposition leader against the autocratic[1] Ugandan regime and performs on stage as Bobi Wine. He founded the National Unity Platform political party in 2020.",
       message:
