@@ -1,22 +1,17 @@
 import React from "react";
 import { FiMoreHorizontal } from "react-icons/fi";
 
-function NotificationItem() {
-  return (
+const NotificationItem = React.forwardRef(({ notification }, ref) =>{
+  const postBody = (
     <div className="flex px-8 py-4 hover:bg-sky-100 hover:cursor-pointer">
       <img
         src="https://www.visiongroup.co.ug/wp-content/uploads/2022/12/nv-product-371x347.jpg"
         alt="profile"
         className="object-cover w-12 h-12 rounded-full"
       />
-      <div className="ps-4">
-        <p className="text-sm">
-          <span className="font-bold">
-            New Vision: Your trusted source for breaking news, analysis.
-          </span>
-          Biggest News Source in Uganda and the East African Region ,Breaking
-          news in <span className="font-bold">Uganda</span> and Daily news and
-          the latest from Uganda, New vision News, breaking news
+      <div className="w-full ps-4">
+        <p className="text-sm break-all whitespace-pre-line line-clamp-3">
+          {notification.body}
         </p>
       </div>
       <div className="ms-2">
@@ -25,6 +20,15 @@ function NotificationItem() {
       </div>
     </div>
   );
-}
+
+  const content = ref ? (
+    <div ref={ref}>{postBody}</div>
+  ) : (
+    <div>{postBody}</div>
+  );
+
+  return content;
+
+})
 
 export default NotificationItem;
