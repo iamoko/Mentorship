@@ -11,10 +11,11 @@ function ChatItem(props) {
 
   return (
     <div
-      className="flex px-4 pt-4 hover:cursor-pointer"
+      className={`flex px-4 pt-4 hover:cursor-pointer ${
+        useSelector(chats.chat).id === chat.id && "border-s-4 border-green-700"
+      }`}
       onClick={() => {
-        dispatch(addChat.chatKey(chat.id));
-        dispatch(addChat.title(chat.title));
+        dispatch(addChat.chat(chat));
       }}
     >
       <img
@@ -24,7 +25,9 @@ function ChatItem(props) {
       />
       <div className="flex-1 w-full min-h-full pb-3 border-b ms-2">
         <div className="flex justify-between">
-          <p className="text-sm font-semibold line-clamp-1">{chat.title}</p>
+          <p className="text-sm font-semibold capitalize line-clamp-1">
+            {chat.name}
+          </p>
           <p className="text-sm font-medium line-clamp-1 ms-1">{chat.date}</p>
         </div>
         <p className="text-sm line-clamp-2 text-slate-800">{chat.message}</p>
