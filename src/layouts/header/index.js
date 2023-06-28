@@ -79,11 +79,11 @@ function Index() {
   ];
 
   return (
-    <div className="bg-white h-14 sticky top-0 z-10 border-b-2">
-      <div className="container mx-auto px-4 md:px-4 xl:px-24 2xl:px-48 h-full">
+    <div className="sticky top-0 z-10 bg-white border-b-2 h-14">
+      <div className="container h-full px-4 mx-auto md:px-4 xl:px-24 2xl:px-48">
         <div className="flex justify-between h-full">
           <div className="">
-            <img className="h-10 w-10 mt-2" src={logo} alt="profile" />
+            <img className="w-10 h-10 mt-2" src={logo} alt="profile" />
           </div>
 
           <div className="flex">
@@ -114,7 +114,7 @@ function Index() {
           <div className="h-full header-profile">
             <div className="flex justify-center w-full">
               <img
-                className="h-7 w-7 rounded-full mt-2"
+                className="mt-2 rounded-full h-7 w-7"
                 src="https://avatars.githubusercontent.com/u/40918307?v=4"
                 alt="profile"
               />
