@@ -8,11 +8,15 @@ function Messages() {
   const chat = useSelector(chats.chat);
   return (
     <div>
-      <p className="px-4 py-3 text-sm font-semibold capitalize border-b">
-        {chat.name !== undefined && chat.name.length > 0
-          ? chat.name
-          : "Messages section"}
-      </p>
+      <div className="h-12 px-4 py-1 border-b">
+        <p className="text-sm font-semibold capitalize">
+          {chat.name !== undefined && chat.name.length > 0 && chat.name}
+        </p>
+
+        <p className="text-xs line-clamp-1 text-slate-600">
+          {chat.title !== undefined && chat.title.length > 0 && chat.title}
+        </p>
+      </div>
 
       {Object.keys(chat).length !== 0 && (
         <div className="h-[calc(100vh_-_120px)] overflow-x-hidden overscroll-y-auto py-3">
