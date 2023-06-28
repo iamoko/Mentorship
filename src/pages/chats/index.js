@@ -2,7 +2,7 @@ import React from "react";
 
 function index() {
   document.title = "Messaging";
-  return <div>Chats</div>;
+  return <div>Chatsing</div>;
 }
 
 export default index;
