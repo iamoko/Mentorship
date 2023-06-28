@@ -8,7 +8,7 @@ function Messages() {
   return (
     <div>
       <p className="px-4 py-3 text-sm font-semibold capitalize border-b">
-        {chat.title.length === 0 ? "Messages section" : chat.title}
+        {chat.name.length === 0 ? "Messages section" : chat.name}
       </p>
 
       <div className="h-[calc(100vh_-_120px)] overflow-x-hidden overscroll-y-auto p-3">
@@ -18,7 +18,9 @@ function Messages() {
           className="object-cover w-20 h-20 rounded-full min-w-20 min-h-20 max-w-20 max-h-20"
         />
         <div className="p-2">
-          <p className="text-lg font-semibold capitalize">{chat.title}</p>
+          <p className="text-lg font-semibold capitalize">{chat.name}</p>
+
+          <p className="text-sm capitalize line-clamp-3">{chat.title}</p>
         </div>
       </div>
     </div>

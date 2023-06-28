@@ -26,7 +26,7 @@ function ChatItem(props) {
       <div className="flex-1 w-full min-h-full pb-3 border-b ms-2">
         <div className="flex justify-between">
           <p className="text-sm font-semibold capitalize line-clamp-1">
-            {chat.title}
+            {chat.name}
           </p>
           <p className="text-sm font-medium line-clamp-1 ms-1">{chat.date}</p>
         </div>
