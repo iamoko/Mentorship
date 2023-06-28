@@ -7,6 +7,7 @@ function index() {
     <div className="flex pt-2 gap-5 home-container">
       <div className="w-60">
         <div className="rounded-lg p-4 mb-4 bg-red-600">
+          <p>Testing webflow got github pages</p>
           <Dummy />
         </div>
 
