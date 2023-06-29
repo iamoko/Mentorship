@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mentorship/static/css/main.f53be160.css",
+    "main.js": "/mentorship/static/js/main.cc38b709.js",
+    "static/js/787.a3301b12.chunk.js": "/mentorship/static/js/787.a3301b12.chunk.js",
+    "static/media/logo.png": "/mentorship/static/media/logo.62bcfc4eaddee7407a55.png",
+    "index.html": "/mentorship/index.html",
+    "main.f53be160.css.map": "/mentorship/static/css/main.f53be160.css.map",
+    "main.cc38b709.js.map": "/mentorship/static/js/main.cc38b709.js.map",
+    "787.a3301b12.chunk.js.map": "/mentorship/static/js/787.a3301b12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f53be160.css",
+    "static/js/main.cc38b709.js"
+  ]
+}
