@@ -1,0 +1,5 @@
+Dark mode background color
+bg-slate-800
+
+Lighter dark mode
+bg-neutral-900

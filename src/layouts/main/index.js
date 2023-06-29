@@ -9,6 +9,7 @@ import Chats from "../../pages/chats";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function index() {
+  localStorage.theme = 'light'
   return (
     <div>
       <BrowserRouter>

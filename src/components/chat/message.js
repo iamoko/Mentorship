@@ -19,7 +19,7 @@ function Message(props) {
             </li>
           </ul>
         </div>
-        <p className="mt-2 text-sm break-all whitespace-pre-line">{message.message}</p>
+        <p className="mt-2 text-sm break-words whitespace-pre-line">{message.message}</p>
       </div>
     </div>
   );
